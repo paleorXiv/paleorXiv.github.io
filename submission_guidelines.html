@@ -6,30 +6,37 @@
 		<meta charset="utf-8">
 		<title>PaleorXiv</title>
 
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<!-- Latest compiled and minified CSS -- YETI from bootswatch theme -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-xpQNcoacYF/4TKVs2uD3sXyaQYs49wxwEmeFNkOUgun6SLWdEbaCOv8hGaB9jLxt" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified FontAwesome -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2" crossorigin="anonymous"></script>
 		
-		<style>
-		
-			.main_logo { 
+	<style>	
+ 		.main_logo { 
 				display: block; 
 				margin-right: auto; 
 				margin-left: auto; 
 				width: 550px; 
 				height: 297px; 
 			}
+			
+			.nav-item {
+			 padding:3px;
+			}
+			
+			.nav-link {
+			 font-size:1.4em;
+			}
+			
 			.navbar-nav {
     			float:none;
    				margin: auto;
-    			/* vertical menu */
-    			/* display: block; */
     			text-align: center;
 			}
-			.navbar .active { background: #cacdd1; }
-                        .text { padding-top: 25px; }
 		</style>
 	</head>
 
@@ -38,15 +45,18 @@
 		
 		<div class="container">
 
-			<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
 
-  				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    				<ul class="navbar-nav mr-auto">
-      					<li class="nav-item">
+		<div class="collapse navbar-collapse" id="navbarColor01">
+		  <ul class="navbar-nav mr-auto">
+		  <li class="nav-item">
         					<a class="nav-link" href="index.html">Home 
         					<span class="sr-only">(current)</span></a>
       					</li>
-      					<li class="nav-item active">
+      <li class="nav-item active">
         					<a class="nav-link" href="submission_guidelines.html">Submission Guidelines</a>
       					</li>
 					<li class="nav-item">
@@ -67,58 +77,63 @@
 					<li class="nav-item">
         					<a class="nav-link" href="faq.html">FAQ</a>
       					</li>
-  				</div>
-			
-			</nav>
+     </ul>
+		</div>
+	</nav>
 
-		<h4 style="text-align: justify;">Submission guidelines</h4>
+		<h3 style="padding-top:1em;">Submission guidelines</h3>
 				
-<p style="text-align: justify;"><a href="https://osf.io/preprints/paleorxiv/submit"><strong>PaleorXiv is open for submissions!</strong></a></p>
-<p style="text-align: justify;"><em>Please note that these guidelines are subject to change.</em>
+<p><a href="https://osf.io/preprints/paleorxiv/submit"><strong>PaleorXiv is open for submissions!</strong></a></p>
+<p><em>Please note that these guidelines are subject to change.</em>
 	
 	
-<h4 style="text-align: justify;">General information</h4>
-
-<ul style="text-align: justify;">
- 	<li style="text-align: justify;">PaleorXiv accepts all types of manuscript, including but not limited to systematic reviews, hypotheses, ‘negative’ results, and data and methods papers.</li>
- 	<li style="text-align: justify;">We publish two major types of article:
-	<ol>
-		<li style="text-align: justify;">Preprints of articles in parallel to traditional journal submissions.</li>
- 		<li style="text-align: justify;">Previously published articles that you wish to make Open Access.</li>
-	</ol>
- 	<li style="text-align: justify;">Please check the <strong><a href="https://paleorxiv.github.io/journal_policies.html/" target="_blank" rel="noopener">Journal Policies</a></strong> page for further details on self-archiving options.</li>
- 	<li style="text-align: justify;">We encourage submissions from all domains of Paleontology and Paleobiology, including, but not limited to: Vertebrate paleontology; Invertebrate paleontology; Micropaleontology; Paleobotany; Paleoecology; Paleoclimatology; Paleogeography;  Paleoceanography; Paleohistology; Paleobiogegraphy; and Biostratigraphy.</li>
- 	<li style="text-align: justify;">We do not accept letters or blog posts, or those which do not pass the normal community standards for submission.</li>
- 	<li style="text-align: justify;">Note that preprint publication does not replace publishing with journals, and we recommend authors to use the <a href="http://www.sherpa.ac.uk/romeo/index.php">SHERPA/RoMEO</a> service to check journal preprint policies. A Paleontology-specific and revised version of this database is maintained <strong><a href="http://fossilsandshit.com/paleorxiv/journal-policies/" target="_blank" rel="noopener">here</a></strong>.</li>
-</ul>
+		<h4>General information</h4>
+			<ul>
+			 	<li>PaleorXiv accepts all types of manuscript, including but not limited to systematic reviews, hypotheses, ‘negative’ results, and data and methods papers.</li>
+			 	<li>We publish two major types of article:
+				<ol>
+					<li>Preprints of articles in parallel to traditional journal submissions.</li>
+			 		<li>Previously published articles that you wish to make Open Access.</li>
+				</ol>
+			 	<li>Please check the <strong><a href="https://paleorxiv.github.io/journal_policies.html/" target="_blank" rel="noopener">Journal Policies</a></strong> page for further details on self-archiving options.</li>
+			 	<li>We encourage submissions from all domains of Paleontology and Paleobiology, including, but not limited to: Vertebrate paleontology; Invertebrate paleontology; Micropaleontology; Paleobotany; Paleoecology; Paleoclimatology; Paleogeography;  Paleoceanography; Paleohistology; Paleobiogegraphy; and Biostratigraphy.</li>
+			 	<li>We do not accept letters or blog posts, or those which do not pass the normal community standards for submission.</li>
+			 	<li>Note that preprint publication does not replace publishing with journals, and we recommend authors to use the <a href="http://www.sherpa.ac.uk/romeo/index.php">SHERPA/RoMEO</a> service to check journal preprint policies. A Paleontology-specific and revised version of this database is maintained <strong><a href="http://fossilsandshit.com/paleorxiv/journal-policies/" target="_blank" rel="noopener">here</a></strong>.</li>
+			</ul>
 				
-<h4 style="text-align: justify;">Your submissions</strong></h4>
-
-<ul style="text-align: justify;">
- 	<li style="text-align: justify;">All submissions will go through a basic moderation process to check for conformation with these guidelines.</li>
-	<li style="text-align: justify;">All published articles will be granted a CC BY 4.0 license and a DOI. All articles are indexed in Google Scholar.</li>
- 	<li style="text-align: justify;">Submissions that do not meet these guidelines will not be published, and the authors notified.</li>
- 	<li style="text-align: justify;">As common courtesy, please make sure that all co-authors are aware of, and have agreed to, submission. They will be notified upon submission of preprints.</li>
- 	<li style="text-align: justify;">Before submitting, it is recommended to add a note to the front page stating “This is a preprint that has been submitted to journal XXX” where applicable. When updating to the postprint or accepted author manuscript, please change to “This is a postprint that has been peer reviewed and accepted at journal XXX.” A template for this is available <strong><a href="https://github.com/paleorXiv/resources/blob/master/Cover%20letter%20template.pdf" rel="attachment wp-att-2620">here</a></strong>.</li>
- 	<li style="text-align: justify;">All preprints can be updated with the postprint version or author-accepted manuscript. Please check for journal compliance and embargo periods where needed.</li>
-</ul>
+		<h4>Your submissions</strong></h4>
+			<ul>
+			 	<li>All submissions will go through a basic moderation process to check for conformation with these guidelines.</li>
+				<li>All published articles will be granted a CC BY 4.0 license and a DOI. All articles are indexed in Google Scholar.</li>
+			 	<li>Submissions that do not meet these guidelines will not be published, and the authors notified.</li>
+			 	<li>As common courtesy, please make sure that all co-authors are aware of, and have agreed to, submission. They will be notified upon submission of preprints.</li>
+			 	<li>Before submitting, it is recommended to add a note to the front page stating “This is a preprint that has been submitted to journal XXX” where applicable. When updating to the postprint or accepted author manuscript, please change to “This is a postprint that has been peer reviewed and accepted at journal XXX.” A template for this is available <strong><a href="https://github.com/paleorXiv/resources/blob/master/Cover%20letter%20template.pdf" rel="attachment wp-att-2620">here</a></strong>.</li>
+			 	<li>All preprints can be updated with the postprint version or author-accepted manuscript. Please check for journal compliance and embargo periods where needed.</li>
+			</ul>
 			
-<h4 style="text-align: justify;">Using paleorXiv articles</h4>
-
-<ul style="text-align: justify;">
- 	<li>Please note that preprints are not formally peer reviewed. When re-using them, and especially when citing, this status should be clearly marked.</li>
- 	<li style="text-align: justify;">Please exercise the same care and judgment you would use for any research output when it comes to the re-use of preprints.</li>
- 	<li style="text-align: justify;">We strongly encourage community interaction through commenting and sharing of preprints.</li>
-</ul>
-<h4 style="text-align: justify;">Taxonomic submissions</h4>
-
-<ul style="text-align: justify;">
- 	<li style="text-align: justify;">When submitting taxonomic papers that identify new genera or species, please omit the name and replace with 'gen et. sp. nov.', as appropriate.</li>
- 	<li style="text-align: justify;">For newly named higher level taxa, recombinations, referrals, synonymisations, and phylogenetic definitions, we strongly advise that these be fully redacted too prior to submission.</li>
- 	<li style="text-align: justify;">For manuscripts that include a lot of taxonomic and systematic work, authors are advised to carefully consider the taxonomic implications before publishing.</li>
-</ul>
+			<h4>Using paleorXiv articles</h4>
+			<ul>
+			 	<li>Please note that preprints are not formally peer reviewed. When re-using them, and especially when citing, this status should be clearly marked.</li>
+			 	<li>Please exercise the same care and judgment you would use for any research output when it comes to the re-use of preprints.</li>
+			 	<li>We strongly encourage community interaction through commenting and sharing of preprints.</li>
+			</ul>
 			
-<p style="text-align: justify;">For more information, please contact us <a href="mailto:jon.tennant.2@gmail.com">here</a>.</p>
+			<h4>Taxonomic submissions</h4>
+			<ul>
+			 	<li>When submitting taxonomic papers that identify new genera or species, please omit the name and replace with 'gen et. sp. nov.', as appropriate.</li>
+			 	<li>For newly named higher level taxa, recombinations, referrals, synonymisations, and phylogenetic definitions, we strongly advise that these be fully redacted too prior to submission.</li>
+			 	<li>For manuscripts that include a lot of taxonomic and systematic work, authors are advised to carefully consider the taxonomic implications before publishing.</li>
+			</ul>
+			
+<p>For more information, please contact us <a href="mailto:jon.tennant.2@gmail.com">here</a>.</p>
+
+		<footer id="footer">
+			<hr/>	
+			
+			<!-- add a license here -->
+			
+			<p>Contact email: <a href="mailto:jon.tennant.2@gmail.com">jon dot tennant dot 2 at gmail dot com</a>. Source code can found at <a href="https://github.com/paleorXiv/paleorXiv.github.io">paleorXiv/paleorXiv.github.io</a>. Based on <a href="https://getbootstrap.com" rel="nofollow">Bootstrap</a>. Theme is <a href="https://bootswatch.com/yeti/">Yeti</a> from <a href="https://bootswatch.com/">Bootswatch</a>. Icons from <a href="http://fontawesome.io/" rel="nofollow">Font Awesome</a>.</p>
+    </footer>	
 
 		</div>
 	</body>
