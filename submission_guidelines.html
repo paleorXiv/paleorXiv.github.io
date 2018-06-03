@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,11 +10,15 @@
 		<!-- Latest compiled and minified CSS -- YETI from bootswatch theme -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-xpQNcoacYF/4TKVs2uD3sXyaQYs49wxwEmeFNkOUgun6SLWdEbaCOv8hGaB9jLxt" crossorigin="anonymous">
 		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
 		<!-- Latest compiled and minified FontAwesome -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2" crossorigin="anonymous"></script>
+		
 		
 	<style>	
  		.main_logo { 
@@ -36,6 +41,10 @@
     			float:none;
    				margin: auto;
     			text-align: center;
+			}
+			
+			.boxed {
+				border: 1px solid black ;
 			}
 		</style>
 	</head>
@@ -62,7 +71,7 @@
 					<li class="nav-item">
         					<a class="nav-link" href="journal_policies.html">Journal Policies</a>
       					</li>
-					<li class="nav-item active">
+					<li class="nav-item">
         					<a class="nav-link" href="code_of_conduct.html">Code of Conduct</a>
       					</li>
 					<li class="nav-item">
@@ -73,8 +82,14 @@
       					</li>
 		</div>
 	</nav>
+	
+							<div class="boxed"><ul style="padding-top:0em;"><p></p>
+			    <a href="#submission"><li>What can be submitted and how does submission work?</li></a>
+		     	<a href="#moderation"><li>How are submissions moderated?</li></a>
 
-		<h3 style="padding-top:1em;">Submission guidelines</h3>
+	</ul></div>
+
+		<a id="submission"><h3 style="padding-top:1em;">Submission</h3></a>
 				
 			<p><a href="https://paleorxiv.org/submit"><strong>PaleorXiv is open for submissions!</strong></a></p>
 			<p><em>Please note that these guidelines are subject to change.</em>
@@ -102,12 +117,12 @@
 				<li> Select any relevant disciplines from paleorXiv's customised taxonomy. Add as many as you feel are necessary.</li>
 				<li> If you are sharing a version of an article that has been previously published, please add the article DOI here to link them through. Also you can add any article key words, the date of publication, and the abstract here.</li>
 				<li> To add co-authors, please check first to see if they are existing OSF users. If not, please add them by email, and arrange the author order as needed.</li>
-				<li> Submit your paper! Articles will undergo a quick <a href="moderation.html">moderation</a> check for compliance, and then published online immediately.</li>
+				<li> Submit your paper! Articles will undergo a quick <a href="#moderation">moderation</a> check for compliance, and then published online immediately.</li>
 			</ol>	
 		
 		<h4>Your submissions</strong></h4>
 			<ul>
-			 <li> All submissions will go through a basic moderation process to check for conformation with these guidelines.</li>
+			 <li> All submissions will go through a basic <a href="#moderation">moderation</a> process to check for conformation with these guidelines.</li>
 			 <li> All published articles will be granted a CC BY 4.0 license and a DOI. All articles are indexed in Google Scholar.</li>
 			 <li> Submissions that do not meet these guidelines will not be published, and the authors notified.</li>
 			 <li> As common courtesy, please make sure that all co-authors are aware of, and have agreed to, submission. They will be notified upon submission of preprints.</li>
@@ -128,7 +143,7 @@
 			 	<li>For manuscripts that include a lot of taxonomic and systematic work, authors are advised to carefully consider the taxonomic implications before publishing.</li>
 			</ul>
 		
-		<h3 style="padding-top:1em;">Moderation</h3>
+		<a id="moderation"><h3 style="padding-top:1em;">Moderation</h3></a>
 		
 		<h4 style="text-align: justify;">Policy</h4>
 			<p><span style="font-weight: 400;">PaleorXiv accepts papers at any stage of the publication process. We moderate papers before they appear publicly, which is called “pre-moderation” on the Open Science Framework platform. To learn more about how this moderation works on our system, </span><a href="http://help.osf.io/m/preprints/l/806116-submitting-to-a-preprint-service-that-uses-moderation#submitting-to-preprint-service-that-uses-a-pre-moderation"><span style="font-weight: 400;">visit this page from our hosts</span></a><span style="font-weight: 400;">. Subject to volume demands, we expect to post papers submitted for moderation within 1-3 business days.</span></p>
